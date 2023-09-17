@@ -38,16 +38,20 @@ const func = function() {
 }
 // func();
 
-console.log(typeof score);
-console.log(typeof scoreValue);
-console.log(typeof outsideTemp);
-console.log(typeof isLoggedIn);
-console.log(typeof userEmail);
-console.log(typeof id);
-console.log(typeof Bignumber);
-console.log(typeof heroes);
-console.log(typeof details);
-console.log(typeof func);
+
+
+
+
+// console.log(typeof score);
+// console.log(typeof scoreValue);
+// console.log(typeof outsideTemp);
+// console.log(typeof isLoggedIn);
+// console.log(typeof userEmail);
+// console.log(typeof id);
+// console.log(typeof Bignumber);
+// console.log(typeof heroes);
+// console.log(typeof details);
+// console.log(typeof func);
 
 
 
@@ -67,3 +71,37 @@ console.log(typeof func);
 //        Arrays  =>  object
 //        Function  =>  function   (object-Function)
 //        Object  =>  object
+
+
+
+
+
+
+
+// ++++++++++++++++ Memory Allocation ++++++++++++++++++
+
+// Stack (primitive)  ,  Heap (Non-primitive)
+
+
+// Stack
+let myName = "Abhi Sandhu";
+let myNikName = myName;
+
+myNikName = "Kyromx"
+// console.log(myName);
+// console.log(myNikName);
+
+
+
+// Heap
+let userOne = {
+    email: "user@gmail.com",
+    upi: "hitesh@ybl"
+}
+
+let userTwo = userOne;
+userTwo.email = "user2@google.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
